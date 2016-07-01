@@ -17,6 +17,13 @@
 		D53A581C1CFEE0F1001889C6 /* 7.png in Resources */ = {isa = PBXBuildFile; fileRef = D53A58151CFEE0F1001889C6 /* 7.png */; };
 		D53A581F1CFEEC0C001889C6 /* MainListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53A581D1CFEEC0C001889C6 /* MainListCell.swift */; };
 		D53A58201CFEEC0C001889C6 /* MainListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D53A581E1CFEEC0C001889C6 /* MainListCell.xib */; };
+		D54965771D250451004427B8 /* CouponsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D54965751D250451004427B8 /* CouponsCell.swift */; };
+		D54965781D250451004427B8 /* CouponsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D54965761D250451004427B8 /* CouponsCell.xib */; };
+		D549657B1D250699004427B8 /* CouponsCellItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D54965791D250699004427B8 /* CouponsCellItem.swift */; };
+		D549657C1D250699004427B8 /* CouponsCellItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = D549657A1D250699004427B8 /* CouponsCellItem.xib */; };
+		D549657E1D250A6C004427B8 /* CouponsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D549657D1D250A6C004427B8 /* CouponsModel.swift */; };
+		D54965811D25152C004427B8 /* CityCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D549657F1D25152C004427B8 /* CityCell.swift */; };
+		D54965821D25152C004427B8 /* CityCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D54965801D25152C004427B8 /* CityCell.xib */; };
 		D5BE0BD81CFE93E200AD42F9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5BE0BD71CFE93E200AD42F9 /* AppDelegate.swift */; };
 		D5BE0BDF1CFE93E200AD42F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5BE0BDE1CFE93E200AD42F9 /* Assets.xcassets */; };
 		D5BE0BE21CFE93E200AD42F9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5BE0BE01CFE93E200AD42F9 /* LaunchScreen.storyboard */; };
@@ -46,6 +53,13 @@
 		D53A58151CFEE0F1001889C6 /* 7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 7.png; sourceTree = "<group>"; };
 		D53A581D1CFEEC0C001889C6 /* MainListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainListCell.swift; sourceTree = "<group>"; };
 		D53A581E1CFEEC0C001889C6 /* MainListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainListCell.xib; sourceTree = "<group>"; };
+		D54965751D250451004427B8 /* CouponsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CouponsCell.swift; sourceTree = "<group>"; };
+		D54965761D250451004427B8 /* CouponsCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CouponsCell.xib; sourceTree = "<group>"; };
+		D54965791D250699004427B8 /* CouponsCellItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CouponsCellItem.swift; sourceTree = "<group>"; };
+		D549657A1D250699004427B8 /* CouponsCellItem.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CouponsCellItem.xib; sourceTree = "<group>"; };
+		D549657D1D250A6C004427B8 /* CouponsModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CouponsModel.swift; sourceTree = "<group>"; };
+		D549657F1D25152C004427B8 /* CityCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CityCell.swift; sourceTree = "<group>"; };
+		D54965801D25152C004427B8 /* CityCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CityCell.xib; sourceTree = "<group>"; };
 		D5BE0BD41CFE93E200AD42F9 /* TwoFlowerSelection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TwoFlowerSelection.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5BE0BD71CFE93E200AD42F9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D5BE0BDE1CFE93E200AD42F9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -140,6 +154,8 @@
 			children = (
 				D5BE0C001CFED32D00AD42F9 /* CityViewController.swift */,
 				D5BE0C011CFED32D00AD42F9 /* CityViewController.xib */,
+				D549657F1D25152C004427B8 /* CityCell.swift */,
+				D54965801D25152C004427B8 /* CityCell.xib */,
 			);
 			path = city;
 			sourceTree = "<group>";
@@ -149,6 +165,11 @@
 			children = (
 				D5BE0C031CFED32D00AD42F9 /* CouponsViewController.swift */,
 				D5BE0C041CFED32D00AD42F9 /* CouponsViewController.xib */,
+				D54965751D250451004427B8 /* CouponsCell.swift */,
+				D54965761D250451004427B8 /* CouponsCell.xib */,
+				D54965791D250699004427B8 /* CouponsCellItem.swift */,
+				D549657A1D250699004427B8 /* CouponsCellItem.xib */,
+				D549657D1D250A6C004427B8 /* CouponsModel.swift */,
 			);
 			path = coupons;
 			sourceTree = "<group>";
@@ -232,15 +253,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				D53A58191CFEE0F1001889C6 /* 4.png in Resources */,
+				D549657C1D250699004427B8 /* CouponsCellItem.xib in Resources */,
 				D5BE0C0F1CFED32D00AD42F9 /* CouponsViewController.xib in Resources */,
 				D53A58161CFEE0F1001889C6 /* 1.png in Resources */,
 				D53A581C1CFEE0F1001889C6 /* 7.png in Resources */,
 				D5BE0C131CFED32D00AD42F9 /* MineViewController.xib in Resources */,
 				D5BE0C111CFED32D00AD42F9 /* MainViewController.xib in Resources */,
 				D5BE0BE21CFE93E200AD42F9 /* LaunchScreen.storyboard in Resources */,
+				D54965781D250451004427B8 /* CouponsCell.xib in Resources */,
 				D53A581B1CFEE0F1001889C6 /* 6.png in Resources */,
 				D53A58181CFEE0F1001889C6 /* 3.png in Resources */,
 				D5BE0BDF1CFE93E200AD42F9 /* Assets.xcassets in Resources */,
+				D54965821D25152C004427B8 /* CityCell.xib in Resources */,
 				D53A58171CFEE0F1001889C6 /* 2.png in Resources */,
 				D53A581A1CFEE0F1001889C6 /* 5.png in Resources */,
 				D5BE0BFE1CFECD5700AD42F9 /* BaseViewController.xib in Resources */,
@@ -259,10 +283,14 @@
 				D53A580D1CFEDC6A001889C6 /* FlowView.m in Sources */,
 				D5BE0BFA1CFEC49600AD42F9 /* MainManager.swift in Sources */,
 				D5BE0BD81CFE93E200AD42F9 /* AppDelegate.swift in Sources */,
+				D54965811D25152C004427B8 /* CityCell.swift in Sources */,
 				D53A581F1CFEEC0C001889C6 /* MainListCell.swift in Sources */,
 				D5BE0C0E1CFED32D00AD42F9 /* CouponsViewController.swift in Sources */,
+				D549657B1D250699004427B8 /* CouponsCellItem.swift in Sources */,
 				D5BE0C121CFED32D00AD42F9 /* MineViewController.swift in Sources */,
 				D5BE0C101CFED32D00AD42F9 /* MainViewController.swift in Sources */,
+				D54965771D250451004427B8 /* CouponsCell.swift in Sources */,
+				D549657E1D250A6C004427B8 /* CouponsModel.swift in Sources */,
 				D5BE0BFD1CFECD5700AD42F9 /* BaseViewController.swift in Sources */,
 				D5BE0C0C1CFED32D00AD42F9 /* CityViewController.swift in Sources */,
 			);

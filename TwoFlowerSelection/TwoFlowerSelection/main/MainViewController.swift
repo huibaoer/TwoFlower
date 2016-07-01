@@ -34,11 +34,6 @@ class MainViewController: BaseViewController {
         flowView.reloadData()
         tableView.tableHeaderView = flowView
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
     
     //MARK: tableView
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

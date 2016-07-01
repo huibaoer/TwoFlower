@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="CouponsCellItem" customModule="TwoFlowerSelection" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="107" height="107"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="107" height="107"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="665-cp-r65">
+                        <rect key="frame" x="8" y="8" width="91" height="62"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="665-cp-r65" secondAttribute="height" multiplier="91:62" id="Iiq-se-Pyu"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="京东" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qhc-Un-IFI">
+                        <rect key="frame" x="8" y="78" width="91" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <color key="backgroundColor" red="1" green="0.63137254899999995" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="665-cp-r65" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="8" id="0aq-tr-986"/>
+                <constraint firstItem="665-cp-r65" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="EG8-4w-TSJ"/>
+                <constraint firstAttribute="trailing" secondItem="665-cp-r65" secondAttribute="trailing" constant="8" id="KBs-uZ-SBW"/>
+                <constraint firstAttribute="trailing" secondItem="qhc-Un-IFI" secondAttribute="trailing" constant="8" id="LWc-SZ-0e8"/>
+                <constraint firstAttribute="bottom" secondItem="qhc-Un-IFI" secondAttribute="bottom" constant="8" id="TVe-CV-kCb"/>
+                <constraint firstItem="qhc-Un-IFI" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="wNV-B7-H74"/>
+            </constraints>
+            <size key="customSize" width="94" height="90"/>
+            <point key="canvasLocation" x="335.5" y="346.5"/>
+        </collectionViewCell>
+    </objects>
+</document>

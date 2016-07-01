@@ -14,7 +14,19 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="UpJ-P9-wVh">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </tableView>
+            </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="UpJ-P9-wVh" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="8Aa-I9-COs"/>
+                <constraint firstAttribute="trailing" secondItem="UpJ-P9-wVh" secondAttribute="trailing" id="VQj-mX-Gea"/>
+                <constraint firstAttribute="bottom" secondItem="UpJ-P9-wVh" secondAttribute="bottom" id="eMV-kd-thi"/>
+                <constraint firstItem="UpJ-P9-wVh" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="ex9-hR-LPi"/>
+            </constraints>
             <point key="canvasLocation" x="374" y="354"/>
         </view>
     </objects>
