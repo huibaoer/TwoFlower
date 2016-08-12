@@ -7,8 +7,12 @@
 //
 
 #import "SelectVC.h"
+#import "SelectCell.h"
+#import "FlowView.h"
 
 @interface SelectVC ()
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
+@property (nonatomic, strong) FlowView *flowView;
 
 @end
 
@@ -17,21 +21,40 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    self.navigationItem.title = @"精选";
+    
+    [self.tableView registerNib:[UINib nibWithNibName:@"SelectCell" bundle:nil] forCellReuseIdentifier:@"identifier"];
+    self.flowView = [[FlowView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, 150)];
+    NSMutableArray *array = [NSMutableArray array];
+    for (int i = 1; i <= 7; i++) {
+        NSString *name = [NSString stringWithFormat:@"%d", i];
+        UIImage *image = [UIImage imageNamed:name];
+        [array addObject:image];
+    }
+    self.flowView.images = array;
+    [self.flowView reloadData];
+    self.tableView.tableHeaderView = self.flowView;
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+#pragma mark - tableView
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return 100;
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    return 95;
 }
-*/
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"identifier" forIndexPath:indexPath];
+    
+    return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    [tableView deselectRowAtIndexPath:indexPath animated:NO];
+}
+
+
 
 @end
